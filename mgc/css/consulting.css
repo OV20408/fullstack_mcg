@@ -1,0 +1,165 @@
+/* Company Profile Consulting Section */
+.company-profile-consulting {
+    padding: 5rem 0;
+    background-color: var(--white);
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    margin: 40px auto;
+    max-width: 1000px;
+    position: relative;
+}
+
+.decoration {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: rgba(23, 125, 167, 0.1);
+    z-index: 0;
+}
+
+.decoration-1 {
+    top: 20%;
+    left: 10%;
+}
+
+.decoration-2 {
+    bottom: 15%;
+    right: 10%;
+}
+
+.profile-wrapper-consulting {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    position: relative;
+    z-index: 1;
+}
+
+.profile-content-consulting {
+    width: 100%;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.profile-content-consulting h3 {
+    font-size: 2.2rem;
+    color: var(--dark-blue);
+    margin-bottom: 1.5rem;
+    position: relative;
+    padding-bottom: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.profile-content-consulting h3::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 4px;
+    background: linear-gradient(90deg, var(--primary-blue), var(--light-blue));
+    border-radius: 2px;
+}
+
+.profile-content-consulting p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #333;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Contenedor de imagen mejorado */
+.profile-image-container-consulting {
+    width: 100%;
+    max-width: 700px;
+    display: flex;
+    justify-content: center;
+    padding: 0 20px;
+}
+
+.profile-image-card-consulting {
+    text-align: center;
+    padding: 25px;
+    background-color: #f8f9fa;
+    border-radius: 15px;
+    transition: all 0.4s ease;
+    width: 100%;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    border: 1px solid #e0e0e0;
+}
+
+.profile-image-card-consulting:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+/* Imagen con espacio y borde redondeado */
+.profile-image-card-consulting img {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: white;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+}
+
+.image-caption-consulting {
+    margin-top: 20px;
+    font-style: italic;
+    color: var(--dark-gray);
+    font-size: 1rem;
+}
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 768px) {
+    .company-profile-consulting {
+        padding: 3rem 0;
+        margin: 20px auto;
+    }
+    
+    .profile-wrapper-consulting {
+        gap: 2rem;
+    }
+    
+    .profile-content-consulting h3 {
+        font-size: 1.8rem;
+    }
+    
+    .profile-image-card-consulting {
+        padding: 15px;
+    }
+    
+    .profile-image-card-consulting img {
+        max-height: 300px;
+        padding: 10px;
+    }
+    
+    .decoration {
+        display: none; /* Ocultar decoraciones en móviles */
+    }
+}
+
+@media (max-width: 480px) {
+    .profile-content-consulting h3 {
+        font-size: 1.5rem;
+    }
+    
+    .profile-content-consulting h3::after {
+        width: 70px;
+    }
+    
+    .profile-content-consulting p {
+        font-size: 1rem;
+    }
+    
+    .image-caption-consulting {
+        font-size: 0.9rem;
+    }
+}

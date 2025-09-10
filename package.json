@@ -1,0 +1,16 @@
+{
+  "name": "mgc-fullstack",
+  "version": "1.0.0",
+  "description": "Proyecto fullstack con frontend y backend unidos",
+  "scripts": {
+    "build": "echo 'Frontend ya está listo (HTML/CSS/JS)'",
+    "start": "cd mgc_back && npm install && npm start",
+    "dev": "cd backend && npm run dev"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "dependencies": {
+    "swiper": "^11.2.10"
+  }
+}

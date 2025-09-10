@@ -1,0 +1,153 @@
+<!-- index.html -->
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MCG - Mentoría & Consulting Group</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="img/Logocompacto-icon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+</head>
+<body>
+    <!-- Loading Spinner -->
+    <div class="page-transition-loader">
+        <div class="spinner">
+            <div class="double-bounce1"></div>
+            <div class="double-bounce2"></div>
+        </div>
+    </div>
+    <header class="header">
+        <div class="container">
+            <div class="logo-brand">
+                <div class="logo">
+                    <img src="img/Logocompacto.png" alt="MCG Logo">
+                </div>
+                <div class="brand-name">
+                    <span class="company-name">Mentoría & Consulting Group S.R.L.</span>
+                    <span class="company-subtitle">Capacitación, Consultoría y Soporte</span>
+                </div>
+            </div>
+            <nav class="nav">
+                <ul class="nav-menu">
+                    <li><a href="index.html">INICIO</a></li>
+                    <li><a href="quienes-somos.html">QUIENES SOMOS</a></li>
+                    <li class="dropdown">
+                        <a href="servicios.html">SERVICIOS <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="capacitacion.html">Capacitación Especializada</a></li>
+                            <li><a href="consultoria.html">Servicios de Consultoría</a></li>
+                            <li><a href="soporte-admin-operativo.html">Soporte Administrativo y Operativo</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="clientes.html">CLIENTES</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+            <div class="cta-header">
+                <a href="contacto.html" class="btn btn-primary">Contáctanos</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-background">
+                <div class="hero-slide active">
+                    <img src="img/oil.png" alt="Energía Renovable"> <!-- pozo de petróleo -->
+                </div>
+                <div class="hero-slide">
+                    <img src="img/ambiental.jpeg" alt="Energía Tradicional"> <!-- fondo ambiental -->
+                </div>
+                <div class="hero-slide">
+                    <img src="img/hero-renewable.png" alt="Energía Tradicional"> <!-- energia eolica -->
+                </div>
+            </div>
+
+            <!-- Nuevos controles del carrusel -->
+            <div class="hero-controls">
+                <button class="hero-control prev" aria-label="Anterior"><i class="fas fa-chevron-left"></i></button>
+                <div class="hero-indicators">
+                    <span class="indicator active" data-index="0"></span>
+                    <span class="indicator" data-index="1"></span>
+                    <span class="indicator" data-index="2"></span>
+                </div>
+                <button class="hero-control next" aria-label="Siguiente"><i class="fas fa-chevron-right"></i></button>
+            </div>
+                
+            <div class="hero-content">
+                <div class="container">
+                    <h1 class="hero-title">LIDERAZGO QUE INSPIRA, CULTURA QUE TRANSFORMA...<br>EXCELENCIA QUE PERDURA!!!!</h1>
+                    <!-- Textos dinámicos para cada slide -->
+                    <div class="hero-subtitle-container">
+                        <p class="hero-subtitle active" data-slide="0">
+                            En Mentoria & Consulting Group S.R.L. (MCG), impulsamos el éxito empresarial mediante soluciones especializadas en consultoría organizacional, enfocadas en alcanzar la excelencia estratégica y operativa.
+                        </p>
+                        <p class="hero-subtitle" data-slide="1">
+                            Ofrecemos servicios integrales de Capacitación, Consultoría y Soporte Administrativo u Operativo, orientados a fortalecer áreas clave como Gobernanza, Planeamiento Estratégico, Calidad, Seguridad, Salud, Medio Ambiente y Responsabilidad Social Empresarial (QHSE & RSE).
+                        </p>
+                        <p class="hero-subtitle" data-slide="2">
+                            Nos enfocamos en comprender las necesidades reales de cada organización, promoviendo cambios efectivos, mejora continua y sostenibilidad a largo plazo.
+                        </p>
+                    </div>
+                    <a href="servicios.html" class="btn btn-secondary">Conoce Nuestros Servicios</a>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="cta-section">
+            <div class="container">
+                <h2>Impulsa la Excelencia de tu Negocio con MCG</h2>
+                <p>Descubre cómo nuestros servicios pueden transformar tu organización</p>
+                <a href="contacto.html" class="btn btn-primary">Contáctanos</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Contacto</h3>
+                    <p><i class="fas fa-phone"></i> +591 710-11739</p>
+                    <p><i class="fas fa-envelope"></i> ramiromoscosoz@hotmail.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Santa Cruz, Bolivia</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Servicios</h3>
+                    <ul>
+                        <li><a href="capacitacion.html">Capacitación</a></li>
+                        <li><a href="consultoria.html">Consultoría</a></li>
+                        <li><a href="soporte-admin-operativo.html">Soporte</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Empresa</h3>
+                    <ul>
+                        <li><a href="quienes-somos.html">Quienes Somos</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Mentoría & Consulting Group (MCG). Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="js/slider.js"></script>
+    <script src="js/loader.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+</html>
+
+
+

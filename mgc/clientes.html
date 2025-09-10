@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuestros Clientes - MCG</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" href="img/Logocompacto-icon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/pages.css">
+    <div class="page-transition-loader">
+            <div class="spinner">
+                <div class="double-bounce1"></div>
+                <div class="double-bounce2"></div>
+            </div>
+        </div>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo-brand">
+                <div class="logo">
+                    <img src="img/Logocompacto.png" alt="MCG Logo">
+                </div>
+                <div class="brand-name">
+                    <span class="company-name">Mentoría & Consulting Group S.R.L.</span>
+                    <span class="company-subtitle">Capacitación, Consultoría y Soporte</span>
+                </div>
+            </div>
+            <nav class="nav">
+                <ul class="nav-menu">
+                    <li><a href="index.html">INICIO</a></li>
+                    <li><a href="quienes-somos.html">QUIENES SOMOS</a></li>
+                    <li class="dropdown">
+                        <a href="servicios.html">SERVICIOS <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="capacitacion.html">Capacitación Especializada</a></li>
+                            <li><a href="consultoria.html">Servicios de Consultoría</a></li>
+                            <li><a href="soporte-admin-operativo.html">Soporte Administrativo y Operativo</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="clientes.html">CLIENTES</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+            <div class="cta-header">
+                <a href="contacto.html" class="btn btn-primary">Contáctanos</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <div class="page-hero-background">
+                <img src="img/clients-hero.png" alt="Nuestros Clientes">
+            </div>
+            <div class="page-hero-content">
+                <div class="container">
+                    <h1>Nuestros Clientes y Experiencia</h1>
+                    <p>Confianza construida a través de la calidad en los servicios ofertados</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="clients-section">
+            <div class="container">
+                <h2 class="support-main-title">
+                    <span class="title-line"></span>
+                    <span class="title-text">NUESTROS CLIENTES</span>
+                    <span class="title-line"></span>
+                </h2>                   
+                <p class="clients-intro">
+                    Nuestro equipo directivo ha colaborado con importantes empresas del sector energético, 
+                    aportando su experiencia en QHSE&RSE y contribuyendo al desarrollo sostenible de sus operaciones.
+                </p>
+                
+                <div class="clients-grid">
+                    <div class="client-card" data-modal="ypfb-chaco">
+                        <img src="img/logoypfb.png" alt="Petrobras Bolivia">
+                        <h3>YPFB Chaco S.A.</h3>
+                        <p>Capacitación en Seguridad en Industrial</p>
+                    </div>
+                    
+                    <div class="client-card" data-modal="sinopec-bolivia">
+                        <img src="img/logosinopec.png" alt="Sinopec">
+                        <h3>Sinopec</h3>
+                        <p>Servicios de consultoría especializada</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modales mejorados -->
+    <div id="ypfb-chaco" class="modal">
+        <div class="modal-content">
+            <span class="close">&#x2716;</span>
+            <div class="modal-body">
+                <div class="modal-info">
+                    <h2>YPFB Chaco S.A.</h2>
+                    <div class="info-section">
+                        <strong>Descripción del Sector</strong>
+                        <p>YPFB Chaco S.A. es una importante empresa del Sector hidrocarburos, subsidiaria de YPFB, encargada de la exploración y explotación (E&P) de gas y petróleo.</p>
+                    </div>
+                    <div class="info-section">
+                        <strong>Servicio Prestado</strong>
+                        <div class="tags-container">
+                            <span class="tag service-tag">Manejo de Mercurio en Áreas Industriales</span>
+                        </div>
+                        <p style="margin-top: 10px;">
+                            Capacitación especializada relacionada a la presencia de Mercurio en actividades petroleras y el abordaje adecuado en aspectos normativos, cuidados operacionales y consideraciones HSE para minimizar su impacto y generar operaciones seguras.
+                        </p>
+                    </div>
+                    <div class="info-section">
+                        <strong>Período de Colaboración</strong>
+                        <div class="tags-container">
+                            <span class="tag duration-tag">Abril 2024 (16 Hrs)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal-gallery">
+                    <div class="main-image">
+                        <img src="img/ypfbimg1.png" alt="Proyecto con YPFB Chaco S.A." id="main-ypfb-chaco">
+                    </div>
+                    <div class="thumbnails">
+                        <div class="thumbnail active" data-main-image="main-ypfb-chaco" data-image-src="img/ypfbimg1.png">
+                            <img src="img/ypfbimg1.png" alt="Thumbnail 1">
+                        </div>
+                        <div class="thumbnail" data-main-image="main-ypfb-chaco" data-image-src="img/ypfbimg2.png">
+                            <img src="img/ypfbimg2.png" alt="Thumbnail 2">
+                        </div>
+                        <div class="thumbnail" data-main-image="main-ypfb-chaco" data-image-src="img/ypfbimg3.png">
+                            <img src="img/ypfbimg3.png" alt="Thumbnail 3">
+                        </div>
+                        <div class="thumbnail" data-main-image="main-ypfb-chaco" data-image-src="img/ypfbimg4.png">
+                            <img src="img/ypfbimg4.png" alt="Thumbnail 4">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="sinopec-bolivia" class="modal">
+        <div class="modal-content">
+            <span class="close">&#x2716;</span>
+            <div class="modal-body">
+                <div class="modal-info">
+                    <h2>Sinopec International Petroleum Service Ecuador S.A.</h2>
+                    <p style="font-size: 16px; color: #0066cc; margin-bottom: 15px;">(Sucursal Bolivia)</p>
+                    <div class="info-section">
+                        <strong>Descripción del Sector</strong>
+                        <p>Importante empresa del Sector hidrocarburos, encargada de servicios de operación y mantenimiento de equipos de perforación, terminación y workover para YPFB.</p>
+                    </div>
+                    <div class="info-section">
+                        <strong>Servicio Prestado</strong>
+                        <div class="tags-container">
+                            <span class="tag service-tag">Contrato Marco para Capacitación, Consultoría y Monitoreos en QHSE</span>
+                        </div>
+                        <p style="margin-top: 10px;">
+                            Desarrollo de #17 capacitaciones especializadas en SySO, conforme legislación vigente, Normas Técnicas aplicables para actividades de Exploración y Producción (E&P), requisitos y lineamientos establecidos por la empresa Operadora.
+                        </p>
+                    </div>
+                    <div class="info-section">
+                        <strong>Período de Colaboración</strong>
+                        <div class="tags-container">
+                            <span class="tag duration-tag">Agosto 2024 - Vigente a la fecha</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-gallery">
+                    <div class="main-image">
+                        <img src="img/sinpecimg1.png" alt="Proyecto con Sinopec International" id="main-sinopec">
+                    </div>
+                    <div class="thumbnails">
+                        <div class="thumbnail active" data-main-image="main-sinopec" data-image-src="img/sinpecimg1.png">
+                            <img src="img/sinpecimg1.png" alt="Thumbnail 1">
+                        </div>
+                        <div class="thumbnail" data-main-image="main-sinopec" data-image-src="img/sinpecimg2.png">
+                            <img src="img/sinpecimg2.png" alt="Thumbnail 2">
+                        </div>
+                        <div class="thumbnail" data-main-image="main-sinopec" data-image-src="img/sinpecimg3.png">
+                            <img src="img/sinpecimg3.png" alt="Thumbnail 3">
+                        </div>
+                        <div class="thumbnail" data-main-image="main-sinopec" data-image-src="img/sinpecimg4.png">
+                            <img src="img/sinpecimg4.png" alt="Thumbnail 4">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Contacto</h3>
+                    <p><i class="fas fa-phone"></i> +591 710-11739</p>
+                    <p><i class="fas fa-envelope"></i> ramiromoscosoz@hotmail.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Santa Cruz, Bolivia</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Servicios</h3>
+                    <ul>
+                        <li><a href="capacitacion.html">Capacitación</a></li>
+                        <li><a href="consultoria.html">Consultoría</a></li>
+                        <li><a href="soporte-admin-operativo.html">Soporte</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Empresa</h3>
+                    <ul>
+                        <li><a href="quienes-somos.html">Quienes Somos</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Mentoría & Consulting Group (MCG). Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="js/loader.js"></script>
+    <script src="js/modal.js"></script>
+</body>
+</html>

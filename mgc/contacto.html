@@ -1,0 +1,236 @@
+    <!-- contacto.html -->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - MCG</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/pages.css">
+    <link rel="icon" href="img/Logocompacto-icon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+</head>
+<body>
+    <!-- Loading Spinner -->
+    <div class="page-transition-loader">
+        <div class="spinner">
+            <div class="double-bounce1"></div>
+            <div class="double-bounce2"></div>
+        </div>
+    </div>
+
+    <header class="header">
+        <div class="container">
+            <div class="logo-brand">
+                <div class="logo">
+                    <img src="img/Logocompacto.png" alt="MCG Logo">
+                </div>
+                <div class="brand-name">
+                    <span class="company-name">Mentoría & Consulting Group S.R.L.</span>
+                    <span class="company-subtitle">Capacitación, Consultoría y Soporte</span>
+                </div>
+            </div>
+            <nav class="nav">
+                <ul class="nav-menu">
+                    <li><a href="index.html">INICIO</a></li>
+                    <li><a href="quienes-somos.html">QUIENES SOMOS</a></li>
+                    <li class="dropdown">
+                        <a href="servicios.html">SERVICIOS <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="capacitacion.html">Capacitación Especializada</a></li>
+                            <li><a href="consultoria.html">Servicios de Consultoría</a></li>
+                            <li><a href="soporte-admin-operativo.html">Soporte Administrativo y Operativo</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="clientes.html">CLIENTES</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+            <div class="cta-header">
+                <a href="contacto.html" class="btn btn-primary">Contáctanos</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <div class="page-hero-background">
+                <img src="img/contact-hero.png" alt="Contáctanos">
+            </div>
+            <div class="page-hero-content">
+                <div class="container">
+                    <h1>Contáctanos</h1>
+                    <p>Estamos aquí para ayudarte a impulsar la excelencia de tu negocio</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-content">
+            <div class="container">
+                <div class="contact-grid">
+                    <!-- Reemplazar esta sección del formulario -->
+                    <div class="contact-form">
+                        <h3>Envíanos un mensaje</h3>
+                        <form id="contactForm" >
+                            <div class="form-group">
+                                <label for="nombre_completo">Nombre Completo *</label>
+                                <input type="text" id="nombre_completo" name="nombre_completo" placeholder="Mateo Escobar" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Correo Electrónico *</label>
+                                <input type="email" id="email" name="email" placeholder="pablo@gmail.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="telefono">Teléfono</label>
+                                <input type="tel" id="telefono" name="telefono" pattern="[0-9]{7,12}"
+                                        title="Ingrese solo números, entre 7 y 12 dígitos"
+                                        placeholder="Ej: 12345678"
+                                        maxlength="12">
+                                <p id="error-msg" class="field-msg error" style="display:none;" aria-live="polite">
+                                    Ingresa solo números (7 a 12 dígitos).
+                                </p>
+                                <p id="success-msg" class="field-msg success" style="display:none;" aria-live="polite">
+                                    Teléfono válido.
+                                </p>
+                                </div>
+
+                            
+                            <div class="form-group">
+                                <label for="asunto">Asunto *</label>
+                                <input type="text" id="asunto" name="asunto" placeholder="Nombre del Asunto" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="mensaje">Mensaje *</label>
+                                <textarea id="mensaje" name="mensaje" rows="5" required maxlength="1000" placeholder="Escriba un Mensaje"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+                        </form>
+                    </div>
+                    
+                    <div class="contact-info">
+                        <h3>Información de Contacto</h3>
+                        
+                        <div class="contact-item">
+                            <i class="fas fa-user"></i>
+                            <div>
+                                <h4>Ramiro Moscoso</h4>
+                                <p>Gerente General</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Teléfono</h4>
+                                <p>+591 710-11739</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Correo Electrónico</h4>
+                                <p>ramiromoscosoz@hotmail.com</p>
+                                <p>info@mcgbolivia.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Ubicación</h4>
+                                <p>Santa Cruz, Bolivia</p>
+                            </div>
+                        </div>
+                        
+                        <div class="map-container">
+                            <iframe 
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d242117.72088443218!2d-63.30439484999999!3d-17.783478899999988!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x93f1e7c60e5d5e9f%3A0x2b0c4b52a0b4d4e1!2sSanta%20Cruz%20de%20la%20Sierra%2C%20Bolivia!5e0!3m2!1ses!2ses!4v1635000000000!5m2!1ses!2ses" 
+                                width="100%" 
+                                height="250" 
+                                style="border:0;" 
+                                allowfullscreen="" 
+                                loading="lazy">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="commitment-message">
+                    <h3>Nuestro Compromiso</h3>
+                    <p>
+                        En Mentoría & CONSULTING GROUP S.R.L. (MCG), estamos comprometidos con brindar servicios 
+                        de excelencia y satisfacer las necesidades de nuestros clientes, garantizando capacitaciones 
+                        con un aprendizaje efectivo, consultorías y servicios integrales con resultados
+                        positivos para los negocios.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal de éxito -->
+    <div id="modal-contacto-success" class="modal-overlay">
+        <div class="modal-contacto">
+            <div class="modal-icon success">
+                <div class="check-icon"></div>
+            </div>
+            <h3>¡Mensaje Enviado!</h3>
+            <p>Tu mensaje ha sido enviado exitosamente. Nos pondremos en contacto contigo pronto.</p>
+        </div>
+    </div>
+    
+
+    <!-- Modal de error -->
+    <div id="modal-contacto-error" class="modal-overlay">
+        <div class="modal-contacto">
+            <div class="modal-icon error">
+                <div class="x-icon"></div>
+            </div>
+            <h3>Error al Enviar</h3>
+            <p>Hubo un problema al enviar tu mensaje. Por favor, verifica los datos e intenta nuevamente.</p>
+        </div>
+    </div>
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Contacto</h3>
+                    <p><i class="fas fa-phone"></i> +591 710-11739</p>
+                    <p><i class="fas fa-envelope"></i> ramiromoscosoz@hotmail.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Santa Cruz, Bolivia</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Servicios</h3>
+                    <ul>
+                        <li><a href="capacitacion.html">Capacitación</a></li>
+                        <li><a href="consultoria.html">Consultoría</a></li>
+                        <li><a href="soporte-admin-operativo.html">Soporte</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Empresa</h3>
+                    <ul>
+                        <li><a href="quienes-somos.html">Quienes Somos</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Mentoría & Consulting Group (MCG). Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="js/contact.js"></script>
+    <script src="js/loader.js"></script>
+</body>
+</html>
+
