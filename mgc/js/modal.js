@@ -51,17 +51,38 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     });
-    
-    // Event listeners para cerrar modales (botones de cierre)
-    const closeButtons = document.querySelectorAll('.modal .close');
-    closeButtons.forEach(button => {
-        button.addEventListener('click', function() {
-            const modal = this.closest('.modal');
-            if (modal) {
-                closeModal(modal.id);
-            }
-        });
+
+    const modalLinks = document.querySelectorAll('[data-modal]');
+    modalLinks.forEach(link => {
+        // Solo procesar si NO es una client-card (para no duplicar funcionalidad)
+        if (!link.classList.contains('client-card')) {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                const modalId = this.getAttribute('data-modal');
+                if (modalId) {
+                    openModal(modalId);
+                }
+            });
+        }
     });
+
+
+
+    
+
+
+    
+// Event listeners para cerrar modales (botones de cierre)
+const closeButtons = document.querySelectorAll('.modal .close, .modal-construccion-clientes .close');
+closeButtons.forEach(button => {
+    button.addEventListener('click', function() {
+        const modal = this.closest('.modal') || this.closest('.modal-construccion-clientes');
+        if (modal) {
+            closeModal(modal.id);
+        }
+    });
+});
+
     
     // Event listeners para cambiar imágenes (thumbnails)
     const thumbnails = document.querySelectorAll('.thumbnail');

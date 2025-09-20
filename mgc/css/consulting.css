@@ -84,31 +84,31 @@
 
 .profile-image-card-consulting {
     text-align: center;
-    padding: 25px;
+/*     padding: 25px;
     background-color: #f8f9fa;
     border-radius: 15px;
     transition: all 0.4s ease;
     width: 100%;
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
-    border: 1px solid #e0e0e0;
+    border: 1px solid #e0e0e0; */
 }
 
-.profile-image-card-consulting:hover {
+/* .profile-image-card-consulting:hover {
     transform: translateY(-8px);
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
-}
+} */
 
 /* Imagen con espacio y borde redondeado */
 .profile-image-card-consulting img {
     width: 100%;
     height: auto;
-    max-height: 400px;
-    object-fit: cover;
+    max-height: 100%;
+    object-fit: fill;
     border-radius: 10px;
-    padding: 15px;
+/*     padding: 15px;
     background-color: white;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
-}
+ */}
 
 .image-caption-consulting {
     margin-top: 20px;
